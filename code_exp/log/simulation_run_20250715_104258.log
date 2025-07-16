@@ -1,9 +1,0 @@
-2025-07-15 10:42:58,894 - INFO - ====== 开始运行实验 2 ======
-2025-07-15 10:43:03,952 - INFO - Connected to Web3. Default account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
-2025-07-15 10:43:04,102 - ERROR - 实验 2 运行失败: name 'get_certificate_factory' is not defined
-Traceback (most recent call last):
-  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py", line 96, in <module>
-    run()
-  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py", line 64, in run
-    cert_factory = get_certificate_factory()
-NameError: name 'get_certificate_factory' is not defined
