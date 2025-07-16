@@ -1,0 +1,19 @@
+2025-07-15 15:57:47,750 - root - INFO - ====== 开始运行实验 4 ======
+2025-07-15 15:57:47,750 - root - INFO - Log file: /Users/yangzongyou/Downloads/iccip 2022/code_exp/log/experiment4_20250715_155747.log
+2025-07-15 15:57:53,715 - root - INFO - Connected to Web3. Default account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+2025-07-15 15:57:53,715 - root - INFO - Blockchain helper initialized.
+2025-07-15 15:57:53,724 - root - INFO - Deploying contracts...
+2025-07-15 15:57:53,724 - root - INFO - Deploying Certificate_Exp4...
+2025-07-15 15:57:53,737 - root - INFO - Certificate_Exp4 deployed at 0x33aF66De93D607b8036aF3fC7F6234Ea0314B07C. Gas used: 620351
+2025-07-15 15:57:53,737 - root - INFO - Deploying CertOnChain_Exp4...
+2025-07-15 15:57:53,747 - root - INFO - CertOnChain_Exp4 deployed at 0x21d1ef8B48647008835B4c544140478f5cdf7778. Gas used: 780025
+2025-07-15 15:57:53,747 - root - INFO - Contracts deployed at 0x33aF66De93D607b8036aF3fC7F6234Ea0314B07C and 0x21d1ef8B48647008835B4c544140478f5cdf7778.
+2025-07-15 15:57:53,747 - root - INFO - Starting experiment function: run_experiment_4_storage_cost...
+2025-07-15 15:57:53,747 - root - ERROR - 实验 4 运行失败: module 'simulation' has no attribute 'run_experiment_4_storage_cost'
+Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp4.py", line 66, in <module>
+    main_logic()
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp4.py", line 57, in main_logic
+    simulation.run_experiment_4_storage_cost(helper, cert_contract, cert_onchain_contract, dataset, deploy_gas_hybrid, deploy_gas_onchain)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'simulation' has no attribute 'run_experiment_4_storage_cost'

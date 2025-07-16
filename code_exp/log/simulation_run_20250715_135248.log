@@ -1,0 +1,41 @@
+2025-07-15 13:52:48,152 - INFO - ====== STARTING SIMULATION ======
+2025-07-15 13:52:53,203 - INFO - Connected to Web3. Default account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+2025-07-15 13:52:53,203 - INFO - Loading dataset from /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/../dataset/certificates_data.csv...
+2025-07-15 13:52:53,326 - INFO - Dataset loaded with 100000 records.
+2025-07-15 13:52:53,331 - INFO - --- Deploying all contracts for experiments ---
+2025-07-15 13:52:53,331 - INFO - Deploying Certificate (Exp1-3)...
+2025-07-15 13:52:53,345 - INFO - Certificate (Exp1-3) deployed at 0x5FbDB2315678afecb367f032d93F642f64180aa3. Gas used: 620351
+2025-07-15 13:52:53,345 - INFO - Authorizing deployer as an institution for 0x5FbDB2315678afecb367f032d93F642f64180aa3...
+2025-07-15 13:52:53,352 - INFO - Authorization successful.
+2025-07-15 13:52:53,352 - INFO - Deploying CertOnChain (Exp4)...
+2025-07-15 13:52:53,360 - INFO - CertOnChain (Exp4) deployed at 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0. Gas used: 780025
+2025-07-15 13:52:53,360 - INFO - Authorizing deployer as an institution for 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0...
+2025-07-15 13:52:53,360 - INFO - Skipping institution authorization for on-chain contract 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0 (owner is default issuer).
+2025-07-15 13:52:53,360 - INFO - --- Starting Experiment 1: Baseline Performance & Cost ---
+2025-07-15 13:52:53,360 - INFO - Measuring latency for 1000 'issueCertificate' transactions...
+2025-07-15 13:52:58,445 - INFO - Latency results saved to exp1_latency.csv
+2025-07-15 13:52:58,445 - INFO - Measuring gas cost for core operations...
+2025-07-15 13:52:58,455 - INFO - Gas cost results saved to exp1_gas_cost.csv
+2025-07-15 13:52:58,455 - INFO - --- Experiment 1 Finished ---
+2025-07-15 13:52:58,455 - INFO - Total certificates issued after Exp 1: 1000
+2025-07-15 13:52:58,456 - INFO - --- Starting Experiment 2: Throughput & Stress Test ---
+2025-07-15 13:52:58,456 - INFO - Running throughput test with 10000 unique records from the end of the dataset.
+2025-07-15 13:52:58,456 - INFO - Testing throughput with concurrency level: 1
+2025-07-15 13:52:58,456 - CRITICAL - An unrecoverable error occurred: name 'threading' is not defined
+Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/simulation.py", line 396, in main
+    asyncio.run(run_experiment_2_throughput(helper, cert_contract_exp1, dataset))
+  File "/opt/anaconda3/envs/cmbi/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/cmbi/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/cmbi/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/simulation.py", line 153, in run_experiment_2_throughput
+    lock = threading.Lock()
+           ^^^^^^^^^
+NameError: name 'threading' is not defined
+2025-07-15 13:52:58,458 - INFO - ====== SIMULATION FINISHED ======

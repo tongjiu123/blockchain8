@@ -1,0 +1,25 @@
+2025-07-15 16:25:07,012 - INFO - === Starting Node Fault Recovery Test ===
+2025-07-15 16:25:07,012 - INFO - Setting up fault tolerance test environment...
+2025-07-15 16:25:07,012 - INFO - Starting node 0 on port 8545...
+2025-07-15 16:25:10,249 - INFO - Node 0 started successfully on port 8545
+2025-07-15 16:25:10,249 - INFO - Starting node 1 on port 8546...
+2025-07-15 16:25:13,494 - INFO - Node 1 started successfully on port 8546
+2025-07-15 16:25:13,494 - INFO - Starting node 2 on port 8547...
+2025-07-15 16:25:16,720 - INFO - Node 2 started successfully on port 8547
+2025-07-15 16:25:16,720 - INFO - Starting node 3 on port 8548...
+2025-07-15 16:25:20,002 - INFO - Node 3 started successfully on port 8548
+2025-07-15 16:25:20,035 - INFO - Successfully connected to node 0 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 16:25:20,096 - INFO - Successfully connected to node 1 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 16:25:20,118 - INFO - Successfully connected to node 2 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 16:25:20,143 - INFO - Successfully connected to node 3 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 16:25:20,143 - INFO - Connected to 4 nodes
+2025-07-15 16:25:20,143 - INFO - Starting fault tolerance test suite...
+2025-07-15 16:25:20,143 - INFO - Running test scenario: Normal Operation with 4/4 active nodes
+2025-07-15 16:25:20,159 - INFO - Transaction 1/50 successful on node 0
+2025-07-15 16:25:20,173 - INFO - Cleaning up resources...
+2025-07-15 16:25:20,179 - INFO - Node 0 is not running
+2025-07-15 16:25:20,181 - INFO - Node 1 is not running
+2025-07-15 16:25:20,184 - INFO - Node 2 is not running
+2025-07-15 16:25:20,184 - INFO - Node 3 is not running
+2025-07-15 16:25:20,184 - INFO - All nodes stopped
+2025-07-15 16:25:20,184 - INFO - === Node Fault Recovery Test Complete ===

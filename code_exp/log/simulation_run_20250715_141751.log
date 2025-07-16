@@ -1,0 +1,8 @@
+2025-07-15 14:17:51,695 - INFO - ====== 开始运行实验 5 ======
+2025-07-15 14:17:51,695 - INFO - Log file: /Users/yangzongyou/Downloads/iccip 2022/code_exp/log/experiment5_20250715_141751.log
+2025-07-15 14:17:51,695 - ERROR - 实验 5 运行失败: name 'textwrap' is not defined
+Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp5.py", line 36, in <module>
+    indented_code = textwrap.indent(init_and_call_code, '    ')
+                    ^^^^^^^^
+NameError: name 'textwrap' is not defined

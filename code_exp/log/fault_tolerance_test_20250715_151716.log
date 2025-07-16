@@ -1,0 +1,352 @@
+2025-07-15 15:17:16,664 - INFO - === Starting Node Fault Recovery Test ===
+2025-07-15 15:17:16,664 - INFO - Setting up fault tolerance test environment...
+2025-07-15 15:17:16,664 - INFO - Starting node 0 on port 8545...
+2025-07-15 15:17:18,679 - ERROR - Failed to start node 0
+2025-07-15 15:17:18,679 - INFO - Starting node 1 on port 8546...
+2025-07-15 15:17:21,947 - INFO - Node 1 started successfully on port 8546
+2025-07-15 15:17:21,947 - INFO - Starting node 2 on port 8547...
+2025-07-15 15:17:25,212 - INFO - Node 2 started successfully on port 8547
+2025-07-15 15:17:25,212 - INFO - Starting node 3 on port 8548...
+2025-07-15 15:17:28,524 - INFO - Node 3 started successfully on port 8548
+2025-07-15 15:17:28,524 - WARNING - Only 3 out of 4 nodes started successfully
+2025-07-15 15:17:28,556 - INFO - Successfully connected to node 1 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 15:17:28,620 - INFO - Successfully connected to node 2 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 15:17:28,642 - INFO - Successfully connected to node 3 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 15:17:28,642 - INFO - Connected to 3 nodes
+2025-07-15 15:17:28,642 - INFO - Starting fault tolerance test suite...
+2025-07-15 15:17:28,642 - INFO - Running test scenario: Normal Operation with 4/4 active nodes
+2025-07-15 15:17:28,655 - INFO - Transaction 1/50 successful on node 1
+2025-07-15 15:17:29,189 - INFO - Transaction 2/50 successful on node 1
+2025-07-15 15:17:29,723 - INFO - Transaction 3/50 successful on node 2
+2025-07-15 15:17:30,255 - INFO - Transaction 4/50 successful on node 1
+2025-07-15 15:17:30,789 - INFO - Transaction 5/50 successful on node 3
+2025-07-15 15:17:31,324 - INFO - Transaction 6/50 successful on node 2
+2025-07-15 15:17:31,834 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:31,861 - INFO - Transaction 8/50 successful on node 3
+2025-07-15 15:17:32,391 - INFO - Transaction 9/50 successful on node 3
+2025-07-15 15:17:32,901 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:32,926 - INFO - Transaction 11/50 successful on node 1
+2025-07-15 15:17:33,450 - INFO - Transaction 12/50 successful on node 1
+2025-07-15 15:17:33,960 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:33,986 - INFO - Transaction 14/50 successful on node 3
+2025-07-15 15:17:34,521 - INFO - Transaction 15/50 successful on node 3
+2025-07-15 15:17:35,055 - INFO - Transaction 16/50 successful on node 1
+2025-07-15 15:17:35,585 - INFO - Transaction 17/50 successful on node 1
+2025-07-15 15:17:36,117 - INFO - Transaction 18/50 successful on node 2
+2025-07-15 15:17:36,651 - INFO - Transaction 19/50 successful on node 2
+2025-07-15 15:17:37,178 - INFO - Transaction 20/50 successful on node 2
+2025-07-15 15:17:37,709 - INFO - Transaction 21/50 successful on node 3
+2025-07-15 15:17:38,219 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:38,219 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:38,219 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:38,220 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:38,239 - INFO - Transaction 26/50 successful on node 3
+2025-07-15 15:17:38,770 - INFO - Transaction 27/50 successful on node 3
+2025-07-15 15:17:39,304 - INFO - Transaction 28/50 successful on node 3
+2025-07-15 15:17:39,839 - INFO - Transaction 29/50 successful on node 1
+2025-07-15 15:17:40,375 - INFO - Transaction 30/50 successful on node 2
+2025-07-15 15:17:40,885 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:40,885 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:40,885 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:40,907 - INFO - Transaction 34/50 successful on node 2
+2025-07-15 15:17:41,417 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:41,442 - INFO - Transaction 36/50 successful on node 3
+2025-07-15 15:17:41,977 - INFO - Transaction 37/50 successful on node 3
+2025-07-15 15:17:42,511 - INFO - Transaction 38/50 successful on node 1
+2025-07-15 15:17:43,045 - INFO - Transaction 39/50 successful on node 1
+2025-07-15 15:17:43,580 - INFO - Transaction 40/50 successful on node 3
+2025-07-15 15:17:44,090 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:44,115 - INFO - Transaction 42/50 successful on node 3
+2025-07-15 15:17:44,649 - INFO - Transaction 43/50 successful on node 2
+2025-07-15 15:17:45,184 - INFO - Transaction 44/50 successful on node 3
+2025-07-15 15:17:45,718 - INFO - Transaction 45/50 successful on node 1
+2025-07-15 15:17:46,254 - INFO - Transaction 46/50 successful on node 1
+2025-07-15 15:17:46,764 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:17:46,788 - INFO - Transaction 48/50 successful on node 3
+2025-07-15 15:17:47,309 - INFO - Transaction 49/50 successful on node 1
+2025-07-15 15:17:47,838 - INFO - Transaction 50/50 successful on node 2
+2025-07-15 15:17:48,343 - INFO - Fault period complete. Availability: 74.00%
+2025-07-15 15:17:48,343 - INFO - Successful transactions: 37/50
+2025-07-15 15:17:48,344 - INFO - Waiting 10.3 seconds to complete fault duration...
+2025-07-15 15:17:58,651 - INFO - Waiting for nodes to sync...
+2025-07-15 15:18:08,678 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:13,708 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:18,734 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:23,765 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:28,795 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:33,824 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:38,854 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:43,883 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:48,911 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:53,940 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:18:58,970 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:19:03,999 - INFO - Nodes not yet in sync. Block numbers: {1: 15, 2: 11, 3: 17}
+2025-07-15 15:19:09,004 - INFO - Verifying data consistency across nodes...
+2025-07-15 15:19:09,061 - INFO - Data consistency check passed
+2025-07-15 15:19:09,061 - INFO - Test scenario complete: Normal Operation
+2025-07-15 15:19:09,061 - INFO - Results: {'scenario': 'Normal Operation', 'active_nodes': 4, 'total_nodes': 4, 'fault_duration': 30, 'availability': 0.74, 'successful_txs': 37, 'failed_txs': 13, 'recovery_time': 70.35317492485046, 'sync_complete': False, 'data_consistent': True}
+2025-07-15 15:19:19,066 - INFO - Running test scenario: Single Node Failure with 3/4 active nodes
+2025-07-15 15:19:19,088 - INFO - Shutting down node 2 for fault simulation
+2025-07-15 15:19:19,090 - INFO - Stopping node 2...
+2025-07-15 15:19:19,096 - INFO - Node 2 stopped successfully
+2025-07-15 15:19:19,106 - INFO - Transaction 1/50 successful on node 3
+2025-07-15 15:19:19,623 - INFO - Transaction 2/50 successful on node 3
+2025-07-15 15:19:20,148 - INFO - Transaction 3/50 successful on node 3
+2025-07-15 15:19:20,679 - INFO - Transaction 4/50 successful on node 1
+2025-07-15 15:19:21,208 - INFO - Transaction 5/50 successful on node 1
+2025-07-15 15:19:21,736 - INFO - Transaction 6/50 successful on node 1
+2025-07-15 15:19:22,266 - INFO - Transaction 7/50 successful on node 1
+2025-07-15 15:19:22,771 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:22,795 - INFO - Transaction 9/50 successful on node 3
+2025-07-15 15:19:23,323 - INFO - Transaction 10/50 successful on node 3
+2025-07-15 15:19:23,828 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:23,829 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:23,829 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:23,845 - INFO - Transaction 14/50 successful on node 1
+2025-07-15 15:19:24,350 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:24,351 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:24,351 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:24,351 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:24,351 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:24,369 - INFO - Transaction 20/50 successful on node 3
+2025-07-15 15:19:24,897 - INFO - Transaction 21/50 successful on node 1
+2025-07-15 15:19:25,425 - INFO - Transaction 22/50 successful on node 3
+2025-07-15 15:19:25,931 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:25,950 - INFO - Transaction 24/50 successful on node 1
+2025-07-15 15:19:26,474 - INFO - Transaction 25/50 successful on node 3
+2025-07-15 15:19:26,999 - INFO - Transaction 26/50 successful on node 3
+2025-07-15 15:19:27,504 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:27,505 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:27,505 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:27,528 - INFO - Transaction 30/50 successful on node 3
+2025-07-15 15:19:28,052 - INFO - Transaction 31/50 successful on node 3
+2025-07-15 15:19:28,580 - INFO - Transaction 32/50 successful on node 3
+2025-07-15 15:19:29,108 - INFO - Transaction 33/50 successful on node 3
+2025-07-15 15:19:29,630 - INFO - Transaction 34/50 successful on node 3
+2025-07-15 15:19:30,158 - INFO - Transaction 35/50 successful on node 1
+2025-07-15 15:19:30,685 - INFO - Transaction 36/50 successful on node 1
+2025-07-15 15:19:31,213 - INFO - Transaction 37/50 successful on node 1
+2025-07-15 15:19:31,718 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:31,719 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:31,719 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:31,719 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:31,719 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:31,736 - INFO - Transaction 43/50 successful on node 3
+2025-07-15 15:19:32,241 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:32,260 - INFO - Transaction 45/50 successful on node 1
+2025-07-15 15:19:32,784 - INFO - Transaction 46/50 successful on node 1
+2025-07-15 15:19:33,312 - INFO - Transaction 47/50 successful on node 1
+2025-07-15 15:19:33,844 - INFO - Transaction 48/50 successful on node 3
+2025-07-15 15:19:34,371 - INFO - Transaction 49/50 successful on node 3
+2025-07-15 15:19:34,876 - WARNING - No connection to node 0, skipping transaction
+2025-07-15 15:19:34,877 - INFO - Fault period complete. Availability: 60.00%
+2025-07-15 15:19:34,877 - INFO - Successful transactions: 30/50
+2025-07-15 15:19:34,877 - INFO - Waiting 14.2 seconds to complete fault duration...
+2025-07-15 15:19:49,099 - INFO - Restarting node 2
+2025-07-15 15:19:49,099 - INFO - Starting node 2 on port 8547...
+2025-07-15 15:19:51,117 - ERROR - Failed to start node 2
+2025-07-15 15:19:51,117 - INFO - Waiting for nodes to sync...
+2025-07-15 15:20:01,142 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:06,165 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:11,193 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:16,218 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:21,249 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:26,275 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:31,301 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:36,330 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:41,356 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:46,384 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:51,411 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:20:56,435 - INFO - Nodes not yet in sync. Block numbers: {1: 28, 2: 0, 3: 34}
+2025-07-15 15:21:01,441 - INFO - Verifying data consistency across nodes...
+2025-07-15 15:21:01,492 - WARNING - Data inconsistency detected on node 2
+2025-07-15 15:21:01,492 - WARNING - Reference node has 5 certificates, node 2 has 0
+2025-07-15 15:21:01,492 - INFO - Test scenario complete: Single Node Failure
+2025-07-15 15:21:01,492 - INFO - Results: {'scenario': 'Single Node Failure', 'active_nodes': 3, 'total_nodes': 4, 'fault_duration': 30, 'availability': 0.6, 'successful_txs': 30, 'failed_txs': 20, 'recovery_time': 72.3419120311737, 'sync_complete': False, 'data_consistent': False}
+2025-07-15 15:21:11,497 - INFO - Running test scenario: Double Node Failure with 2/4 active nodes
+2025-07-15 15:21:11,519 - INFO - Shutting down node 0 for fault simulation
+2025-07-15 15:21:11,521 - INFO - Stopping node 0...
+2025-07-15 15:21:11,527 - INFO - Node 0 stopped successfully
+2025-07-15 15:21:11,527 - INFO - Shutting down node 2 for fault simulation
+2025-07-15 15:21:11,529 - INFO - Stopping node 2...
+2025-07-15 15:21:11,533 - INFO - Node 2 stopped successfully
+2025-07-15 15:21:11,543 - INFO - Transaction 1/50 successful on node 3
+2025-07-15 15:21:12,071 - INFO - Transaction 2/50 successful on node 1
+2025-07-15 15:21:12,601 - INFO - Transaction 3/50 successful on node 3
+2025-07-15 15:21:13,128 - INFO - Transaction 4/50 successful on node 3
+2025-07-15 15:21:13,656 - INFO - Transaction 5/50 successful on node 3
+2025-07-15 15:21:14,186 - INFO - Transaction 6/50 successful on node 1
+2025-07-15 15:21:14,714 - INFO - Transaction 7/50 successful on node 3
+2025-07-15 15:21:15,239 - INFO - Transaction 8/50 successful on node 3
+2025-07-15 15:21:15,767 - INFO - Transaction 9/50 successful on node 3
+2025-07-15 15:21:16,297 - INFO - Transaction 10/50 successful on node 1
+2025-07-15 15:21:16,827 - INFO - Transaction 11/50 successful on node 3
+2025-07-15 15:21:17,354 - INFO - Transaction 12/50 successful on node 3
+2025-07-15 15:21:17,881 - INFO - Transaction 13/50 successful on node 1
+2025-07-15 15:21:18,410 - INFO - Transaction 14/50 successful on node 1
+2025-07-15 15:21:18,933 - INFO - Transaction 15/50 successful on node 1
+2025-07-15 15:21:19,460 - INFO - Transaction 16/50 successful on node 1
+2025-07-15 15:21:19,984 - INFO - Transaction 17/50 successful on node 1
+2025-07-15 15:21:20,514 - INFO - Transaction 18/50 successful on node 3
+2025-07-15 15:21:21,042 - INFO - Transaction 19/50 successful on node 3
+2025-07-15 15:21:21,571 - INFO - Transaction 20/50 successful on node 3
+2025-07-15 15:21:22,101 - INFO - Transaction 21/50 successful on node 3
+2025-07-15 15:21:22,631 - INFO - Transaction 22/50 successful on node 3
+2025-07-15 15:21:23,158 - INFO - Transaction 23/50 successful on node 3
+2025-07-15 15:21:23,684 - INFO - Transaction 24/50 successful on node 1
+2025-07-15 15:21:24,214 - INFO - Transaction 25/50 successful on node 1
+2025-07-15 15:21:24,744 - INFO - Transaction 26/50 successful on node 1
+2025-07-15 15:21:25,273 - INFO - Transaction 27/50 successful on node 3
+2025-07-15 15:21:25,796 - INFO - Transaction 28/50 successful on node 3
+2025-07-15 15:21:26,319 - INFO - Transaction 29/50 successful on node 3
+2025-07-15 15:21:26,846 - INFO - Transaction 30/50 successful on node 3
+2025-07-15 15:21:27,369 - INFO - Transaction 31/50 successful on node 1
+2025-07-15 15:21:27,894 - INFO - Transaction 32/50 successful on node 1
+2025-07-15 15:21:28,421 - INFO - Transaction 33/50 successful on node 1
+2025-07-15 15:21:28,951 - INFO - Transaction 34/50 successful on node 1
+2025-07-15 15:21:29,482 - INFO - Transaction 35/50 successful on node 3
+2025-07-15 15:21:30,005 - INFO - Transaction 36/50 successful on node 3
+2025-07-15 15:21:30,533 - INFO - Transaction 37/50 successful on node 1
+2025-07-15 15:21:31,056 - INFO - Transaction 38/50 successful on node 1
+2025-07-15 15:21:31,579 - INFO - Transaction 39/50 successful on node 3
+2025-07-15 15:21:32,108 - INFO - Transaction 40/50 successful on node 1
+2025-07-15 15:21:32,628 - INFO - Transaction 41/50 successful on node 3
+2025-07-15 15:21:33,147 - INFO - Transaction 42/50 successful on node 1
+2025-07-15 15:21:33,675 - INFO - Transaction 43/50 successful on node 3
+2025-07-15 15:21:34,203 - INFO - Transaction 44/50 successful on node 1
+2025-07-15 15:21:34,726 - INFO - Transaction 45/50 successful on node 1
+2025-07-15 15:21:35,254 - INFO - Transaction 46/50 successful on node 3
+2025-07-15 15:21:35,778 - INFO - Transaction 47/50 successful on node 1
+2025-07-15 15:21:36,307 - INFO - Transaction 48/50 successful on node 1
+2025-07-15 15:21:36,835 - INFO - Transaction 49/50 successful on node 3
+2025-07-15 15:21:37,363 - INFO - Transaction 50/50 successful on node 1
+2025-07-15 15:21:37,868 - INFO - Fault period complete. Availability: 100.00%
+2025-07-15 15:21:37,869 - INFO - Successful transactions: 50/50
+2025-07-15 15:21:37,869 - INFO - Waiting 3.7 seconds to complete fault duration...
+2025-07-15 15:21:41,539 - INFO - Restarting node 0
+2025-07-15 15:21:41,539 - INFO - Starting node 0 on port 8545...
+2025-07-15 15:21:44,822 - INFO - Node 0 started successfully on port 8545
+2025-07-15 15:21:44,848 - INFO - Successfully connected to node 0 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 15:21:44,848 - INFO - Restarting node 2
+2025-07-15 15:21:44,848 - INFO - Starting node 2 on port 8547...
+2025-07-15 15:21:48,012 - INFO - Node 2 started successfully on port 8547
+2025-07-15 15:21:48,013 - INFO - Waiting for nodes to sync...
+2025-07-15 15:21:58,043 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:03,068 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:08,102 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:13,125 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:18,151 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:23,183 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:28,211 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:33,242 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:38,270 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:43,299 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:48,326 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:53,354 - INFO - Nodes not yet in sync. Block numbers: {0: 2, 1: 52, 2: 0, 3: 60}
+2025-07-15 15:22:58,359 - INFO - Verifying data consistency across nodes...
+2025-07-15 15:22:58,434 - WARNING - Data inconsistency detected on node 2
+2025-07-15 15:22:58,434 - WARNING - Reference node has 5 certificates, node 2 has 0
+2025-07-15 15:22:58,434 - INFO - Test scenario complete: Double Node Failure
+2025-07-15 15:22:58,434 - INFO - Results: {'scenario': 'Double Node Failure', 'active_nodes': 2, 'total_nodes': 4, 'fault_duration': 30, 'availability': 1.0, 'successful_txs': 50, 'failed_txs': 0, 'recovery_time': 76.82082104682922, 'sync_complete': False, 'data_consistent': False}
+2025-07-15 15:23:08,439 - INFO - Running test scenario: Extreme Failure with 1/4 active nodes
+2025-07-15 15:23:08,465 - INFO - Shutting down node 0 for fault simulation
+2025-07-15 15:23:08,466 - INFO - Stopping node 0...
+2025-07-15 15:23:08,473 - INFO - Node 0 stopped successfully
+2025-07-15 15:23:08,473 - INFO - Shutting down node 1 for fault simulation
+2025-07-15 15:23:08,475 - INFO - Stopping node 1...
+2025-07-15 15:23:08,482 - INFO - Node 1 stopped successfully
+2025-07-15 15:23:08,482 - INFO - Shutting down node 2 for fault simulation
+2025-07-15 15:23:08,483 - INFO - Stopping node 2...
+2025-07-15 15:23:08,487 - INFO - Node 2 stopped successfully
+2025-07-15 15:23:08,496 - INFO - Transaction 1/50 successful on node 3
+2025-07-15 15:23:09,024 - INFO - Transaction 2/50 successful on node 3
+2025-07-15 15:23:09,552 - INFO - Transaction 3/50 successful on node 3
+2025-07-15 15:23:10,083 - INFO - Transaction 4/50 successful on node 3
+2025-07-15 15:23:10,613 - INFO - Transaction 5/50 successful on node 3
+2025-07-15 15:23:11,143 - INFO - Transaction 6/50 successful on node 3
+2025-07-15 15:23:11,667 - INFO - Transaction 7/50 successful on node 3
+2025-07-15 15:23:12,196 - INFO - Transaction 8/50 successful on node 3
+2025-07-15 15:23:12,718 - INFO - Transaction 9/50 successful on node 3
+2025-07-15 15:23:13,247 - INFO - Transaction 10/50 successful on node 3
+2025-07-15 15:23:13,777 - INFO - Transaction 11/50 successful on node 3
+2025-07-15 15:23:14,306 - INFO - Transaction 12/50 successful on node 3
+2025-07-15 15:23:14,834 - INFO - Transaction 13/50 successful on node 3
+2025-07-15 15:23:15,364 - INFO - Transaction 14/50 successful on node 3
+2025-07-15 15:23:15,891 - INFO - Transaction 15/50 successful on node 3
+2025-07-15 15:23:16,419 - INFO - Transaction 16/50 successful on node 3
+2025-07-15 15:23:16,947 - INFO - Transaction 17/50 successful on node 3
+2025-07-15 15:23:17,468 - INFO - Transaction 18/50 successful on node 3
+2025-07-15 15:23:17,997 - INFO - Transaction 19/50 successful on node 3
+2025-07-15 15:23:18,527 - INFO - Transaction 20/50 successful on node 3
+2025-07-15 15:23:19,056 - INFO - Transaction 21/50 successful on node 3
+2025-07-15 15:23:19,587 - INFO - Transaction 22/50 successful on node 3
+2025-07-15 15:23:20,110 - INFO - Transaction 23/50 successful on node 3
+2025-07-15 15:23:20,640 - INFO - Transaction 24/50 successful on node 3
+2025-07-15 15:23:21,165 - INFO - Transaction 25/50 successful on node 3
+2025-07-15 15:23:21,696 - INFO - Transaction 26/50 successful on node 3
+2025-07-15 15:23:22,219 - INFO - Transaction 27/50 successful on node 3
+2025-07-15 15:23:22,747 - INFO - Transaction 28/50 successful on node 3
+2025-07-15 15:23:23,277 - INFO - Transaction 29/50 successful on node 3
+2025-07-15 15:23:23,805 - INFO - Transaction 30/50 successful on node 3
+2025-07-15 15:23:24,332 - INFO - Transaction 31/50 successful on node 3
+2025-07-15 15:23:24,856 - INFO - Transaction 32/50 successful on node 3
+2025-07-15 15:23:25,384 - INFO - Transaction 33/50 successful on node 3
+2025-07-15 15:23:25,907 - INFO - Transaction 34/50 successful on node 3
+2025-07-15 15:23:26,436 - INFO - Transaction 35/50 successful on node 3
+2025-07-15 15:23:26,959 - INFO - Transaction 36/50 successful on node 3
+2025-07-15 15:23:27,487 - INFO - Transaction 37/50 successful on node 3
+2025-07-15 15:23:28,014 - INFO - Transaction 38/50 successful on node 3
+2025-07-15 15:23:28,541 - INFO - Transaction 39/50 successful on node 3
+2025-07-15 15:23:29,068 - INFO - Transaction 40/50 successful on node 3
+2025-07-15 15:23:29,598 - INFO - Transaction 41/50 successful on node 3
+2025-07-15 15:23:30,123 - INFO - Transaction 42/50 successful on node 3
+2025-07-15 15:23:30,648 - INFO - Transaction 43/50 successful on node 3
+2025-07-15 15:23:31,178 - INFO - Transaction 44/50 successful on node 3
+2025-07-15 15:23:31,701 - INFO - Transaction 45/50 successful on node 3
+2025-07-15 15:23:32,230 - INFO - Transaction 46/50 successful on node 3
+2025-07-15 15:23:32,760 - INFO - Transaction 47/50 successful on node 3
+2025-07-15 15:23:33,283 - INFO - Transaction 48/50 successful on node 3
+2025-07-15 15:23:33,811 - INFO - Transaction 49/50 successful on node 3
+2025-07-15 15:23:34,340 - INFO - Transaction 50/50 successful on node 3
+2025-07-15 15:23:34,845 - INFO - Fault period complete. Availability: 100.00%
+2025-07-15 15:23:34,846 - INFO - Successful transactions: 50/50
+2025-07-15 15:23:34,846 - INFO - Waiting 3.6 seconds to complete fault duration...
+2025-07-15 15:23:38,492 - INFO - Restarting node 0
+2025-07-15 15:23:38,492 - INFO - Starting node 0 on port 8545...
+2025-07-15 15:23:40,509 - ERROR - Failed to start node 0
+2025-07-15 15:23:40,509 - INFO - Restarting node 1
+2025-07-15 15:23:40,509 - INFO - Starting node 1 on port 8546...
+2025-07-15 15:23:43,748 - INFO - Node 1 started successfully on port 8546
+2025-07-15 15:23:43,748 - INFO - Restarting node 2
+2025-07-15 15:23:43,748 - INFO - Starting node 2 on port 8547...
+2025-07-15 15:23:47,025 - INFO - Node 2 started successfully on port 8547
+2025-07-15 15:23:47,026 - INFO - Waiting for nodes to sync...
+2025-07-15 15:23:57,061 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:02,090 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:07,112 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:12,133 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:17,160 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:22,189 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:27,215 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:32,247 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:37,273 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:42,301 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:47,327 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:52,355 - INFO - Nodes not yet in sync. Block numbers: {0: 0, 1: 0, 2: 0, 3: 110}
+2025-07-15 15:24:57,361 - INFO - Verifying data consistency across nodes...
+2025-07-15 15:24:57,438 - WARNING - Data inconsistency detected on node 3
+2025-07-15 15:24:57,438 - WARNING - Reference node has 0 certificates, node 3 has 5
+2025-07-15 15:24:57,438 - INFO - Test scenario complete: Extreme Failure
+2025-07-15 15:24:57,438 - INFO - Results: {'scenario': 'Extreme Failure', 'active_nodes': 1, 'total_nodes': 4, 'fault_duration': 30, 'availability': 1.0, 'successful_txs': 50, 'failed_txs': 0, 'recovery_time': 78.86873078346252, 'sync_complete': False, 'data_consistent': False}
+2025-07-15 15:25:07,452 - INFO - Results saved to /Users/yangzongyou/Downloads/iccip 2022/code_exp/data/fault_tolerance_test.csv
+2025-07-15 15:25:07,453 - INFO - Cleaning up resources...
+2025-07-15 15:25:07,456 - INFO - Stopping node 0...
+2025-07-15 15:25:07,463 - INFO - Node 0 stopped successfully
+2025-07-15 15:25:07,465 - INFO - Stopping node 1...
+2025-07-15 15:25:07,470 - INFO - Node 1 stopped successfully
+2025-07-15 15:25:07,472 - INFO - Stopping node 2...
+2025-07-15 15:25:07,476 - INFO - Node 2 stopped successfully
+2025-07-15 15:25:07,477 - INFO - Stopping node 3...
+2025-07-15 15:25:07,481 - INFO - Node 3 stopped successfully
+2025-07-15 15:25:07,481 - INFO - All nodes stopped
+2025-07-15 15:25:07,481 - INFO - === Node Fault Recovery Test Complete ===

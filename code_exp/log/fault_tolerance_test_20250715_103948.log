@@ -1,0 +1,178 @@
+2025-07-15 10:39:48,829 - INFO - === Starting Node Fault Recovery Test ===
+2025-07-15 10:39:48,829 - INFO - Setting up fault tolerance test environment...
+2025-07-15 10:39:48,829 - INFO - Starting node 0 on port 8545...
+2025-07-15 10:39:48,830 - ERROR - Port 8545 is already in use. Cannot start node 0.
+2025-07-15 10:39:48,830 - INFO - Starting node 1 on port 8546...
+2025-07-15 10:39:50,847 - ERROR - Failed to start node 1
+2025-07-15 10:39:50,847 - INFO - Starting node 2 on port 8547...
+2025-07-15 10:39:54,166 - INFO - Node 2 started successfully on port 8547
+2025-07-15 10:39:54,167 - INFO - Starting node 3 on port 8548...
+2025-07-15 10:39:54,167 - ERROR - Port 8548 is already in use. Cannot start node 3.
+2025-07-15 10:39:54,167 - WARNING - Only 1 out of 4 nodes started successfully
+2025-07-15 10:39:54,202 - INFO - Successfully connected to node 2 and deployed contract at 0x5FbDB2315678afecb367f032d93F642f64180aa3
+2025-07-15 10:39:54,202 - INFO - Connected to 1 nodes
+2025-07-15 10:39:54,202 - INFO - Starting fault tolerance test suite...
+2025-07-15 10:39:54,202 - INFO - Running test scenario: Normal Operation with 4/4 active nodes
+2025-07-15 10:39:54,206 - WARNING - Only 2 nodes are running, starting missing nodes...
+2025-07-15 10:39:54,206 - INFO - Starting node 0 on port 8545...
+2025-07-15 10:39:54,206 - ERROR - Port 8545 is already in use. Cannot start node 0.
+2025-07-15 10:39:54,210 - INFO - Node 1 is already running
+2025-07-15 10:39:54,210 - INFO - Node 2 is already running
+2025-07-15 10:39:54,210 - INFO - Starting node 3 on port 8548...
+2025-07-15 10:39:54,210 - ERROR - Port 8548 is already in use. Cannot start node 3.
+2025-07-15 10:39:59,218 - ERROR - Not enough nodes running. Need 4, have 2
+2025-07-15 10:40:09,222 - INFO - Running test scenario: Single Node Failure with 3/4 active nodes
+2025-07-15 10:40:09,235 - WARNING - Only 2 nodes are running, starting missing nodes...
+2025-07-15 10:40:09,235 - INFO - Starting node 0 on port 8545...
+2025-07-15 10:40:09,235 - ERROR - Port 8545 is already in use. Cannot start node 0.
+2025-07-15 10:40:09,238 - INFO - Node 1 is already running
+2025-07-15 10:40:09,241 - INFO - Node 2 is already running
+2025-07-15 10:40:09,241 - INFO - Starting node 3 on port 8548...
+2025-07-15 10:40:09,242 - ERROR - Port 8548 is already in use. Cannot start node 3.
+2025-07-15 10:40:14,257 - ERROR - Not enough nodes running. Need 3, have 2
+2025-07-15 10:40:24,261 - INFO - Running test scenario: Double Node Failure with 2/4 active nodes
+2025-07-15 10:40:24,283 - WARNING - Only 2 nodes are running, starting missing nodes...
+2025-07-15 10:40:24,283 - INFO - Starting node 0 on port 8545...
+2025-07-15 10:40:24,283 - ERROR - Port 8545 is already in use. Cannot start node 0.
+2025-07-15 10:40:24,287 - INFO - Node 1 is already running
+2025-07-15 10:40:24,289 - INFO - Node 2 is already running
+2025-07-15 10:40:24,289 - INFO - Starting node 3 on port 8548...
+2025-07-15 10:40:24,289 - ERROR - Port 8548 is already in use. Cannot start node 3.
+2025-07-15 10:40:29,310 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:29,329 - INFO - Transaction 2/50 successful on node 2
+2025-07-15 10:40:29,834 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:29,834 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:29,834 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:29,834 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:29,835 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:29,860 - INFO - Transaction 8/50 successful on node 2
+2025-07-15 10:40:30,365 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:30,366 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:30,391 - INFO - Transaction 11/50 successful on node 2
+2025-07-15 10:40:30,922 - INFO - Transaction 12/50 successful on node 2
+2025-07-15 10:40:31,427 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:31,455 - INFO - Transaction 14/50 successful on node 2
+2025-07-15 10:40:31,960 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:31,960 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:31,960 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:31,960 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:31,986 - INFO - Transaction 19/50 successful on node 2
+2025-07-15 10:40:32,518 - INFO - Transaction 20/50 successful on node 2
+2025-07-15 10:40:33,023 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:33,050 - INFO - Transaction 22/50 successful on node 2
+2025-07-15 10:40:33,581 - INFO - Transaction 23/50 successful on node 2
+2025-07-15 10:40:34,086 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:34,112 - INFO - Transaction 25/50 successful on node 2
+2025-07-15 10:40:34,617 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:34,617 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:34,642 - INFO - Transaction 28/50 successful on node 2
+2025-07-15 10:40:35,174 - INFO - Transaction 29/50 successful on node 2
+2025-07-15 10:40:35,708 - INFO - Transaction 30/50 successful on node 2
+2025-07-15 10:40:36,241 - INFO - Transaction 31/50 successful on node 2
+2025-07-15 10:40:36,746 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:36,746 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:36,747 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:36,774 - INFO - Transaction 35/50 successful on node 2
+2025-07-15 10:40:37,279 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:37,280 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:37,306 - INFO - Transaction 38/50 successful on node 2
+2025-07-15 10:40:37,811 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:37,834 - INFO - Transaction 40/50 successful on node 2
+2025-07-15 10:40:38,339 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:38,363 - INFO - Transaction 42/50 successful on node 2
+2025-07-15 10:40:38,869 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:38,895 - INFO - Transaction 44/50 successful on node 2
+2025-07-15 10:40:39,400 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:40:39,428 - INFO - Transaction 46/50 successful on node 2
+2025-07-15 10:40:39,959 - INFO - Transaction 47/50 successful on node 2
+2025-07-15 10:40:40,490 - INFO - Transaction 48/50 successful on node 2
+2025-07-15 10:40:41,021 - INFO - Transaction 49/50 successful on node 2
+2025-07-15 10:40:41,551 - INFO - Transaction 50/50 successful on node 2
+2025-07-15 10:40:42,056 - INFO - Fault period complete. Availability: 48.00%
+2025-07-15 10:40:42,057 - INFO - Successful transactions: 24/50
+2025-07-15 10:40:42,057 - INFO - Waiting 17.3 seconds to complete fault duration...
+2025-07-15 10:40:59,314 - INFO - Waiting for nodes to sync...
+2025-07-15 10:41:09,359 - INFO - Verifying data consistency across nodes...
+2025-07-15 10:41:09,385 - INFO - Data consistency check passed
+2025-07-15 10:41:09,385 - INFO - Test scenario complete: Double Node Failure
+2025-07-15 10:41:09,385 - INFO - Results: {'scenario': 'Double Node Failure', 'active_nodes': 2, 'total_nodes': 4, 'fault_duration': 30, 'availability': 0.48, 'successful_txs': 24, 'failed_txs': 26, 'recovery_time': 10.04590892791748, 'sync_complete': True, 'data_consistent': True}
+2025-07-15 10:41:19,390 - INFO - Running test scenario: Extreme Failure with 1/4 active nodes
+2025-07-15 10:41:19,402 - WARNING - Only 2 nodes are running, starting missing nodes...
+2025-07-15 10:41:19,402 - INFO - Starting node 0 on port 8545...
+2025-07-15 10:41:19,403 - ERROR - Port 8545 is already in use. Cannot start node 0.
+2025-07-15 10:41:19,407 - INFO - Node 1 is already running
+2025-07-15 10:41:19,409 - INFO - Node 2 is already running
+2025-07-15 10:41:19,409 - INFO - Starting node 3 on port 8548...
+2025-07-15 10:41:19,410 - ERROR - Port 8548 is already in use. Cannot start node 3.
+2025-07-15 10:41:24,428 - INFO - Shutting down node 2 for fault simulation
+2025-07-15 10:41:24,431 - INFO - Stopping node 2...
+2025-07-15 10:41:24,454 - INFO - Node 2 stopped successfully
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,455 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - WARNING - No connection to node 1, skipping transaction
+2025-07-15 10:41:24,456 - INFO - Fault period complete. Availability: 0.00%
+2025-07-15 10:41:24,456 - INFO - Successful transactions: 0/50
+2025-07-15 10:41:24,456 - INFO - Waiting 30.0 seconds to complete fault duration...
+2025-07-15 10:41:54,461 - INFO - Restarting node 2
+2025-07-15 10:41:54,462 - INFO - Starting node 2 on port 8547...
+2025-07-15 10:41:56,477 - ERROR - Failed to start node 2
+2025-07-15 10:41:56,477 - INFO - Waiting for nodes to sync...
+2025-07-15 10:42:06,510 - INFO - Verifying data consistency across nodes...
+2025-07-15 10:42:06,538 - INFO - Data consistency check passed
+2025-07-15 10:42:06,538 - INFO - Test scenario complete: Extreme Failure
+2025-07-15 10:42:06,538 - INFO - Results: {'scenario': 'Extreme Failure', 'active_nodes': 1, 'total_nodes': 4, 'fault_duration': 30, 'availability': 0.0, 'successful_txs': 0, 'failed_txs': 50, 'recovery_time': 12.049535989761353, 'sync_complete': True, 'data_consistent': True}
+2025-07-15 10:42:16,568 - INFO - Results saved to /Users/yangzongyou/Downloads/iccip 2022/code_exp/data/fault_tolerance_test.csv
+2025-07-15 10:42:16,568 - INFO - Cleaning up resources...
+2025-07-15 10:42:16,571 - INFO - Stopping node 1...
+2025-07-15 10:42:17,578 - INFO - Node 1 stopped successfully
+2025-07-15 10:42:17,585 - INFO - Stopping node 2...
+2025-07-15 10:42:17,602 - INFO - Node 2 stopped successfully
+2025-07-15 10:42:17,602 - INFO - All nodes stopped
+2025-07-15 10:42:17,602 - INFO - === Node Fault Recovery Test Complete ===

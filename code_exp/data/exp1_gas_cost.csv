@@ -1,0 +1,4 @@
+operation,gas_cost
+issueCertificate,70883
+revokeCertificate,31196
+verifyCertificate,26377

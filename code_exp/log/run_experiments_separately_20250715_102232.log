@@ -1,0 +1,70 @@
+2025-07-15 10:22:32,769 - INFO - ====== 开始分别运行所有实验 ======
+2025-07-15 10:22:32,769 - INFO - 步骤1: 生成证书数据集
+2025-07-15 10:22:32,769 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/generate_dataset.py']
+2025-07-15 10:22:41,607 - INFO - 命令成功完成：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/generate_dataset.py']
+2025-07-15 10:22:41,607 - INFO - 步骤2: 检查Hardhat节点
+2025-07-15 10:22:41,610 - INFO - Hardhat节点已在运行
+2025-07-15 10:22:41,610 - INFO - 运行 实验1: 基础性能评估
+2025-07-15 10:22:41,610 - INFO - 运行实验1 - 基础性能评估
+2025-07-15 10:22:41,610 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp1.py']
+2025-07-15 10:22:42,430 - ERROR - 命令执行失败：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp1.py']
+2025-07-15 10:22:42,430 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp1.py", line 22, in <module>
+    from blockchain_helper import BlockchainHelper
+ModuleNotFoundError: No module named 'blockchain_helper'
+
+2025-07-15 10:22:42,431 - ERROR - 实验1: 基础性能评估 运行失败，继续下一个实验
+2025-07-15 10:22:42,431 - INFO - 运行 实验2: 吞吐量分析
+2025-07-15 10:22:42,431 - INFO - 运行实验2 - 吸吐量分析
+2025-07-15 10:22:42,431 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py']
+2025-07-15 10:22:43,148 - ERROR - 命令执行失败：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py']
+2025-07-15 10:22:43,148 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py", line 22, in <module>
+    from blockchain_helper import BlockchainHelper
+ModuleNotFoundError: No module named 'blockchain_helper'
+
+2025-07-15 10:22:43,148 - ERROR - 实验2: 吞吐量分析 运行失败，继续下一个实验
+2025-07-15 10:22:43,148 - INFO - 运行 实验3: 可扩展性分析
+2025-07-15 10:22:43,148 - INFO - 运行实验3 - 可扩展性测试
+2025-07-15 10:22:43,148 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp3.py']
+2025-07-15 10:22:43,812 - ERROR - 命令执行失败：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp3.py']
+2025-07-15 10:22:43,812 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp3.py", line 22, in <module>
+    from blockchain_helper import BlockchainHelper
+ModuleNotFoundError: No module named 'blockchain_helper'
+
+2025-07-15 10:22:43,812 - ERROR - 实验3: 可扩展性分析 运行失败，继续下一个实验
+2025-07-15 10:22:43,812 - INFO - 运行 实验4: 存储成本对比分析
+2025-07-15 10:22:43,812 - INFO - 运行实验4 - 存储成本对比分析
+2025-07-15 10:22:43,812 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp4.py']
+2025-07-15 10:22:44,495 - ERROR - 命令执行失败：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp4.py']
+2025-07-15 10:22:44,495 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp4.py", line 22, in <module>
+    from blockchain_helper import BlockchainHelper
+ModuleNotFoundError: No module named 'blockchain_helper'
+
+2025-07-15 10:22:44,495 - ERROR - 实验4: 存储成本对比分析 运行失败，继续下一个实验
+2025-07-15 10:22:44,495 - INFO - 运行 实验5: 撤销机制效率分析
+2025-07-15 10:22:44,495 - INFO - 运行实验5 - 撤销机制效率分析
+2025-07-15 10:22:44,496 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp5.py']
+2025-07-15 10:22:45,126 - ERROR - 命令执行失败：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp5.py']
+2025-07-15 10:22:45,126 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp5.py", line 22, in <module>
+    from blockchain_helper import BlockchainHelper
+ModuleNotFoundError: No module named 'blockchain_helper'
+
+2025-07-15 10:22:45,127 - ERROR - 实验5: 撤销机制效率分析 运行失败，继续下一个实验
+2025-07-15 10:22:45,127 - INFO - 运行 实验6: 节点故障恢复测试
+2025-07-15 10:22:45,127 - INFO - 运行实验6 - 节点故障恢复测试
+2025-07-15 10:22:45,127 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/run_fault_test.py']
+2025-07-15 10:25:13,887 - INFO - 命令成功完成：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/run_fault_test.py']
+2025-07-15 10:25:13,887 - INFO - 实验6: 节点故障恢复测试 运行成功
+2025-07-15 10:25:13,887 - INFO - 分析所有实验结果
+2025-07-15 10:25:13,887 - INFO - 分析所有实验结果
+2025-07-15 10:25:13,887 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/analyze_results.py']
+2025-07-15 10:25:15,008 - INFO - 命令成功完成：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/analyze_results.py']
+2025-07-15 10:25:15,008 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/analyze_fault_tolerance.py']
+2025-07-15 10:25:15,703 - INFO - 命令成功完成：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/analyze_fault_tolerance.py']
+2025-07-15 10:25:15,703 - INFO - 实验结果分析成功
+2025-07-15 10:25:15,703 - INFO - ====== 所有实验运行完成 ======
+2025-07-15 10:25:15,703 - INFO - 请查看 data/ 目录和 analysis/ 目录获取实验结果和分析

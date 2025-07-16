@@ -1,0 +1,5 @@
+scenario,active_nodes,total_nodes,fault_duration,availability,successful_txs,failed_txs,recovery_time,sync_complete,data_consistent
+Normal Operation,4,4,30,0.86,43,7,70.38353300094604,False,True
+Single Node Failure,3,4,30,1.0,50,0,73.58555483818054,False,True
+Double Node Failure,2,4,30,1.0,50,0,76.79389595985413,False,False
+Extreme Failure,1,4,30,1.0,50,0,79.86262011528015,False,False

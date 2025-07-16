@@ -1,0 +1,91 @@
+2025-07-15 11:43:28,971 - INFO - ====== STARTING SIMULATION ======
+2025-07-15 11:43:34,062 - INFO - Connected to Web3. Default account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+2025-07-15 11:43:34,063 - INFO - Loading dataset from /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/../dataset/certificates_data.csv...
+2025-07-15 11:43:34,259 - INFO - Dataset loaded with 100000 records.
+2025-07-15 11:43:34,264 - INFO - --- Deploying all contracts for experiments ---
+2025-07-15 11:43:34,265 - INFO - Deploying Certificate (Exp1-3)...
+2025-07-15 11:43:34,927 - INFO - Certificate (Exp1-3) deployed at 0x49EDddCAAf7Ae5F5971FDc27A88ED1702f5A2A45. Gas used: 620351
+2025-07-15 11:43:34,928 - INFO - Authorizing deployer as an institution for 0x49EDddCAAf7Ae5F5971FDc27A88ED1702f5A2A45...
+2025-07-15 11:43:35,127 - INFO - Authorization successful.
+2025-07-15 11:43:35,127 - INFO - Deploying CertOnChain (Exp4)...
+2025-07-15 11:43:35,433 - INFO - CertOnChain (Exp4) deployed at 0x2b266a67bc42F3a887ab41C3d0c19a5a5793FC37. Gas used: 780025
+2025-07-15 11:43:35,433 - INFO - Authorizing deployer as an institution for 0x2b266a67bc42F3a887ab41C3d0c19a5a5793FC37...
+2025-07-15 11:43:35,434 - INFO - Skipping institution authorization for on-chain contract 0x2b266a67bc42F3a887ab41C3d0c19a5a5793FC37 (owner is default issuer).
+2025-07-15 11:43:35,434 - INFO - --- Starting Experiment 1: Baseline Performance & Cost ---
+2025-07-15 11:43:35,434 - INFO - Measuring latency for 1000 'issueCertificate' transactions...
+2025-07-15 11:44:07,287 - INFO - Latency results saved to exp1_latency.csv
+2025-07-15 11:44:07,287 - INFO - Measuring gas cost for core operations...
+2025-07-15 11:44:07,319 - INFO - Gas cost results saved to exp1_gas_cost.csv
+2025-07-15 11:44:07,319 - INFO - --- Experiment 1 Finished ---
+2025-07-15 11:44:07,320 - INFO - Deploying Certificate (Exp2)...
+2025-07-15 11:44:07,347 - INFO - Certificate (Exp2) deployed at 0xbC2DE69177f3C0D255422A578695Ee802FebAc98. Gas used: 620351
+2025-07-15 11:44:07,347 - INFO - Authorizing deployer as an institution for 0xbC2DE69177f3C0D255422A578695Ee802FebAc98...
+2025-07-15 11:44:07,368 - INFO - Authorization successful.
+2025-07-15 11:44:07,370 - INFO - --- Starting Experiment 2: Throughput & Stress Test ---
+2025-07-15 11:44:07,380 - INFO - Testing throughput with concurrency level: 1
+2025-07-15 11:45:07,383 - INFO - Level 1: 3248 successful transactions in 60.00s. TPS: 54.13
+2025-07-15 11:45:07,386 - INFO - Testing throughput with concurrency level: 10
+2025-07-15 11:46:07,407 - INFO - Level 10: 487 successful transactions in 60.02s. TPS: 8.11
+2025-07-15 11:46:07,409 - INFO - Testing throughput with concurrency level: 50
+2025-07-15 11:47:07,739 - INFO - Level 50: 20 successful transactions in 60.33s. TPS: 0.33
+2025-07-15 11:47:07,741 - INFO - Testing throughput with concurrency level: 100
+2025-07-15 11:48:08,537 - INFO - Level 100: 0 successful transactions in 60.80s. TPS: 0.00
+2025-07-15 11:48:08,537 - INFO - Testing throughput with concurrency level: 200
+2025-07-15 11:49:09,288 - INFO - Level 200: 0 successful transactions in 60.75s. TPS: 0.00
+2025-07-15 11:49:09,291 - INFO - Testing throughput with concurrency level: 500
+2025-07-15 12:03:42,460 - INFO - Level 500: 0 successful transactions in 873.17s. TPS: 0.00
+2025-07-15 12:03:42,460 - INFO - Testing throughput with concurrency level: 1000
+2025-07-15 12:04:45,551 - INFO - Level 1000: 3 successful transactions in 63.09s. TPS: 0.05
+2025-07-15 12:04:45,636 - INFO - Throughput results saved to exp2_throughput.csv
+2025-07-15 12:04:45,636 - INFO - --- Experiment 2 Finished ---
+2025-07-15 12:04:45,690 - INFO - --- Starting Experiment 3: Scalability Test ---
+2025-07-15 12:04:45,690 - INFO - Issuing 9000 new certificates to reach 10000 total records...
+2025-07-15 12:04:46,316 - CRITICAL - An unrecoverable error occurred: ("execution reverted: Error: VM Exception while processing transaction: reverted with reason string 'Certificate already exists'", {'message': "Error: VM Exception while processing transaction: reverted with reason string 'Certificate already exists'", 'data': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001a436572746966696361746520616c726561647920657869737473000000000000'})
+Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/simulation.py", line 382, in main
+    run_experiment_3_scalability(helper, cert_contract_exp1, dataset, initial_records=LATENCY_TEST_RECORDS)
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/simulation.py", line 207, in run_experiment_3_scalability
+    tx_hash = contract.functions.issueCertificate(Web3.to_bytes(hexstr=cert_hash)).transact()
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/contract/contract.py", line 311, in transact
+    return transact_with_contract_function(
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/contract/utils.py", line 265, in transact_with_contract_function
+    txn_hash = w3.eth.send_transaction(transact_transaction)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/eth/eth.py", line 387, in send_transaction
+    return self._send_transaction(transaction)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/module.py", line 112, in caller
+    result = w3.manager.request_blocking(
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/manager.py", line 231, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/manager.py", line 163, in _make_request
+    return request_func(method, params)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/middleware/base.py", line 56, in middleware
+    return self.response_processor(method, make_request(method, params))
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/middleware/base.py", line 56, in middleware
+    return self.response_processor(method, make_request(method, params))
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/middleware/base.py", line 56, in middleware
+    return self.response_processor(method, make_request(method, params))
+  [Previous line repeated 1 more time]
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/middleware/base.py", line 55, in middleware
+    method, params = self.request_processor(method, params)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/middleware/buffered_gas_estimate.py", line 43, in request_processor
+    hex(get_buffered_gas_estimate(cast("Web3", self._w3), transaction)),
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/_utils/transactions.py", line 161, in get_buffered_gas_estimate
+    gas_estimate = w3.eth.estimate_gas(gas_estimate_transaction)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/eth/eth.py", line 317, in estimate_gas
+    return self._estimate_gas(transaction, block_identifier, state_override)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/module.py", line 112, in caller
+    result = w3.manager.request_blocking(
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/manager.py", line 232, in request_blocking
+    return self.formatted_response(
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/manager.py", line 198, in formatted_response
+    validate_rpc_response_and_raise_if_error(
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/_utils/validation.py", line 397, in validate_rpc_response_and_raise_if_error
+    response = apply_error_formatters(error_formatters, response)
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/_utils/formatters.py", line 146, in apply_error_formatters
+    formatted_resp = pipe(response, error_formatters)
+  File "cytoolz/functoolz.pyx", line 685, in cytoolz.functoolz.pipe
+  File "cytoolz/functoolz.pyx", line 660, in cytoolz.functoolz.c_pipe
+  File "/opt/anaconda3/envs/iccip/lib/python3.10/site-packages/web3/_utils/error_formatters_utils.py", line 159, in raise_contract_logic_error_on_revert
+    raise ContractLogicError(f"execution reverted: {message}", data=data)
+web3.exceptions.ContractLogicError: ("execution reverted: Error: VM Exception while processing transaction: reverted with reason string 'Certificate already exists'", {'message': "Error: VM Exception while processing transaction: reverted with reason string 'Certificate already exists'", 'data': '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001a436572746966696361746520616c726561647920657869737473000000000000'})
+2025-07-15 12:04:46,320 - INFO - ====== SIMULATION FINISHED ======

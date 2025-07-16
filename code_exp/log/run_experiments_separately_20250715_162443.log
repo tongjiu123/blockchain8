@@ -1,0 +1,67 @@
+2025-07-15 16:24:43,363 - INFO - ====== 开始分别运行所有实验 ======
+2025-07-15 16:24:43,363 - INFO - 步骤1: 生成证书数据集
+2025-07-15 16:24:43,363 - INFO - 运行命令：['python', 'generate_dataset.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 16:24:50,462 - INFO - 命令成功完成：['python', 'generate_dataset.py']
+2025-07-15 16:24:50,462 - INFO - 步骤2: 检查Hardhat节点
+2025-07-15 16:24:50,465 - INFO - Hardhat节点未运行，正在启动...
+2025-07-15 16:25:00,472 - INFO - Hardhat节点已成功启动
+2025-07-15 16:25:00,472 - INFO - 运行 实验1: 基础性能评估
+2025-07-15 16:25:00,472 - INFO - 运行实验1 - 基础性能评估
+2025-07-15 16:25:00,474 - INFO - 运行命令：['python', 'temp_exp1.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 16:25:00,519 - ERROR - 命令执行失败：['python', 'temp_exp1.py']
+2025-07-15 16:25:00,519 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp1.py", line 12, in <module>
+    if ROOT_DIR not in sys.path:
+                       ^^^
+NameError: name 'sys' is not defined
+
+2025-07-15 16:25:00,519 - ERROR - 实验1: 基础性能评估 运行失败，继续下一个实验
+2025-07-15 16:25:00,519 - INFO - 运行 实验2: 吞吐量分析
+2025-07-15 16:25:00,519 - INFO - 运行实验2 - 吞吐量分析
+2025-07-15 16:25:00,519 - INFO - 运行命令：['python', 'temp_exp2.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 16:25:00,546 - ERROR - 命令执行失败：['python', 'temp_exp2.py']
+2025-07-15 16:25:00,546 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py", line 12, in <module>
+    if ROOT_DIR not in sys.path:
+                       ^^^
+NameError: name 'sys' is not defined
+
+2025-07-15 16:25:00,546 - ERROR - 实验2: 吞吐量分析 运行失败，继续下一个实验
+2025-07-15 16:25:00,546 - INFO - 运行 实验3: 可扩展性分析
+2025-07-15 16:25:00,546 - INFO - 运行实验3 - 可扩展性分析
+2025-07-15 16:25:00,546 - INFO - 运行命令：['python', 'temp_exp3.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 16:25:00,569 - ERROR - 命令执行失败：['python', 'temp_exp3.py']
+2025-07-15 16:25:00,569 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp3.py", line 12, in <module>
+    if ROOT_DIR not in sys.path:
+                       ^^^
+NameError: name 'sys' is not defined
+
+2025-07-15 16:25:00,569 - ERROR - 实验3: 可扩展性分析 运行失败，继续下一个实验
+2025-07-15 16:25:00,569 - INFO - 运行 实验4: 存储成本对比分析
+2025-07-15 16:25:00,569 - INFO - 运行实验4 - 存储成本对比分析
+2025-07-15 16:25:00,570 - INFO - 运行命令：['python', 'temp_exp4.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 16:25:00,591 - ERROR - 命令执行失败：['python', 'temp_exp4.py']
+2025-07-15 16:25:00,591 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp4.py", line 12, in <module>
+    if ROOT_DIR not in sys.path:
+                       ^^^
+NameError: name 'sys' is not defined
+
+2025-07-15 16:25:00,591 - ERROR - 实验4: 存储成本对比分析 运行失败，继续下一个实验
+2025-07-15 16:25:00,591 - INFO - 运行 实验5: 撤销机制效率分析
+2025-07-15 16:25:00,591 - INFO - 运行实验5 - 撤销机制效率分析
+2025-07-15 16:25:00,591 - INFO - 运行命令：['python', 'temp_exp5.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 16:25:00,611 - ERROR - 命令执行失败：['python', 'temp_exp5.py']
+2025-07-15 16:25:00,611 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp5.py", line 12, in <module>
+    if ROOT_DIR not in sys.path:
+                       ^^^
+NameError: name 'sys' is not defined
+
+2025-07-15 16:25:00,611 - ERROR - 实验5: 撤销机制效率分析 运行失败，继续下一个实验
+2025-07-15 16:25:00,615 - INFO - 已关闭通用Hardhat节点，准备运行实验6
+2025-07-15 16:25:05,620 - INFO - 运行 实验6: 节点故障恢复测试
+2025-07-15 16:25:05,621 - INFO - 运行实验6 - 节点故障恢复测试
+2025-07-15 16:25:05,621 - INFO - 直接运行外部脚本: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/fault_tolerance_test.py
+2025-07-15 16:25:05,621 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/fault_tolerance_test.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)

@@ -1,0 +1,39 @@
+2025-07-15 14:15:43,205 - INFO - ====== 开始分别运行所有实验 ======
+2025-07-15 14:15:43,205 - INFO - 步骤1: 生成证书数据集
+2025-07-15 14:15:43,205 - INFO - 运行命令：['python', 'generate_dataset.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 14:15:50,793 - INFO - 命令成功完成：['python', 'generate_dataset.py']
+2025-07-15 14:15:50,793 - INFO - 步骤2: 检查Hardhat节点
+2025-07-15 14:15:50,796 - INFO - Hardhat节点未运行，正在启动...
+2025-07-15 14:16:00,805 - INFO - Hardhat节点已成功启动
+2025-07-15 14:16:00,807 - INFO - 运行 实验5: 撤销机制效率分析
+2025-07-15 14:16:00,807 - INFO - 运行实验5 - 撤销机制效率分析
+2025-07-15 14:16:00,809 - INFO - 运行命令：['python', 'temp_exp5.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 14:16:00,835 - ERROR - 命令执行失败：['python', 'temp_exp5.py']
+2025-07-15 14:16:00,835 - ERROR - 错误输出：  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp5.py", line 60
+    end_time = time.time()
+                          ^
+IndentationError: unindent does not match any outer indentation level
+
+2025-07-15 14:16:00,836 - ERROR - 实验5: 撤销机制效率分析 运行失败，继续下一个实验
+2025-07-15 14:16:05,842 - INFO - 运行 实验6: 节点故障恢复测试
+2025-07-15 14:16:05,843 - INFO - 运行实验6 - 节点故障恢复测试
+2025-07-15 14:16:05,843 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/run_fault_test.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp)
+2025-07-15 14:16:08,506 - ERROR - 命令执行失败：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/run_fault_test.py']
+2025-07-15 14:16:08,506 - ERROR - 错误输出：Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/run_fault_test.py", line 7, in <module>
+    from fault_tolerance_test import main as run_fault_test
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/fault_tolerance_test.py", line 17, in <module>
+    from web3.middleware import ExtraDataToPOAMiddleware
+ImportError: cannot import name 'ExtraDataToPOAMiddleware' from 'web3.middleware' (/opt/anaconda3/envs/cmbi/lib/python3.11/site-packages/web3/middleware/__init__.py)
+
+2025-07-15 14:16:08,506 - ERROR - 实验6: 节点故障恢复测试 运行失败
+2025-07-15 14:16:08,506 - INFO - 分析所有实验结果
+2025-07-15 14:16:08,506 - INFO - 分析所有实验结果
+2025-07-15 14:16:08,506 - INFO - 运行命令：['python', 'analyze_results.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 14:16:12,405 - INFO - 命令成功完成：['python', 'analyze_results.py']
+2025-07-15 14:16:12,406 - INFO - 运行命令：['python', 'analyze_fault_tolerance.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 14:16:13,545 - INFO - 命令成功完成：['python', 'analyze_fault_tolerance.py']
+2025-07-15 14:16:13,545 - INFO - 实验结果分析成功
+2025-07-15 14:16:13,545 - INFO - Hardhat节点已关闭
+2025-07-15 14:16:13,545 - INFO - ====== 所有实验运行完成 ======
+2025-07-15 14:16:13,545 - INFO - 请查看 data/ 目录和 analysis/ 目录获取实验结果和分析

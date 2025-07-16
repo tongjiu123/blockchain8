@@ -1,0 +1,9 @@
+2025-07-15 10:39:23,436 - INFO - ====== 开始运行实验 2 ======
+2025-07-15 10:39:28,490 - INFO - Connected to Web3. Default account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+2025-07-15 10:39:28,614 - ERROR - 实验 2 运行失败: name 'experiment_number' is not defined
+Traceback (most recent call last):
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py", line 93, in <module>
+    run()
+  File "/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/temp_exp2.py", line 60, in run
+    if experiment_number in [1, 2, 3]:
+NameError: name 'experiment_number' is not defined

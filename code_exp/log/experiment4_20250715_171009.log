@@ -1,0 +1,15 @@
+2025-07-15 17:10:09,198 - root - INFO - ====== 开始运行实验 4 ======
+2025-07-15 17:10:09,198 - root - INFO - Log file: /Users/yangzongyou/Downloads/iccip 2022/code_exp/log/experiment4_20250715_171009.log
+2025-07-15 17:10:15,157 - root - INFO - Connected to Web3. Default account: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+2025-07-15 17:10:15,157 - root - INFO - Blockchain helper initialized.
+2025-07-15 17:10:15,165 - root - INFO - Deploying contracts...
+2025-07-15 17:10:15,165 - root - INFO - Deploying Certificate_Exp4...
+2025-07-15 17:10:15,179 - root - INFO - Certificate_Exp4 deployed at 0x203cF51DA1bCdf4Bd82656fe0086bac30401457C. Gas used: 620351
+2025-07-15 17:10:15,179 - root - INFO - Deploying CertOnChain_Exp4...
+2025-07-15 17:10:15,190 - root - INFO - CertOnChain_Exp4 deployed at 0xaC2CC39acC5edE63709b9b9cB114C3367693BC3f. Gas used: 780025
+2025-07-15 17:10:15,190 - root - INFO - Contracts deployed at 0x203cF51DA1bCdf4Bd82656fe0086bac30401457C and 0xaC2CC39acC5edE63709b9b9cB114C3367693BC3f.
+2025-07-15 17:10:15,190 - root - INFO - Starting experiment function: run_experiment_4_storage...
+2025-07-15 17:10:15,190 - root - INFO - --- Starting Experiment 4: Storage Cost Comparison ---
+2025-07-15 17:10:15,195 - root - INFO - Storage cost comparison results saved to exp4_storage_comparison.csv
+2025-07-15 17:10:15,195 - root - INFO - --- Experiment 4 Finished ---
+2025-07-15 17:10:15,195 - root - INFO - ====== 实验 4 运行成功, 耗时: 6.00s ======

@@ -1,0 +1,48 @@
+2025-07-15 17:20:59,316 - INFO - ====== 开始分别运行所有实验 ======
+2025-07-15 17:20:59,316 - INFO - 步骤1: 生成证书数据集
+2025-07-15 17:20:59,316 - INFO - 运行命令：['python', 'generate_dataset.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:21:06,625 - INFO - 命令成功完成：['python', 'generate_dataset.py']
+2025-07-15 17:21:06,625 - INFO - 步骤2: 检查Hardhat节点
+2025-07-15 17:21:06,628 - INFO - Hardhat节点未运行，正在启动...
+2025-07-15 17:21:16,641 - INFO - Hardhat节点已成功启动
+2025-07-15 17:21:16,642 - INFO - 运行 实验1: 基础性能评估
+2025-07-15 17:21:16,642 - INFO - 运行实验1 - 基础性能评估
+2025-07-15 17:21:16,644 - INFO - 运行命令：['python', 'temp_exp1.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:21:27,805 - INFO - 命令成功完成：['python', 'temp_exp1.py']
+2025-07-15 17:21:27,805 - INFO - 实验1: 基础性能评估 运行成功
+2025-07-15 17:21:27,805 - INFO - 运行 实验2: 吞吐量分析
+2025-07-15 17:21:27,805 - INFO - 运行实验2 - 吞吐量分析
+2025-07-15 17:21:27,805 - INFO - 运行命令：['python', 'temp_exp2.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:27:45,503 - INFO - 命令成功完成：['python', 'temp_exp2.py']
+2025-07-15 17:27:45,505 - INFO - 实验2: 吞吐量分析 运行成功
+2025-07-15 17:27:45,505 - INFO - 运行 实验3: 可扩展性分析
+2025-07-15 17:27:45,505 - INFO - 运行实验3 - 可扩展性分析
+2025-07-15 17:27:45,505 - INFO - 运行命令：['python', 'temp_exp3.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:28:43,400 - INFO - 命令成功完成：['python', 'temp_exp3.py']
+2025-07-15 17:28:43,401 - INFO - 实验3: 可扩展性分析 运行成功
+2025-07-15 17:28:43,401 - INFO - 运行 实验4: 存储成本对比分析
+2025-07-15 17:28:43,401 - INFO - 运行实验4 - 存储成本对比分析
+2025-07-15 17:28:43,402 - INFO - 运行命令：['python', 'temp_exp4.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:28:49,574 - INFO - 命令成功完成：['python', 'temp_exp4.py']
+2025-07-15 17:28:49,574 - INFO - 实验4: 存储成本对比分析 运行成功
+2025-07-15 17:28:49,574 - INFO - 运行 实验5: 撤销机制效率分析
+2025-07-15 17:28:49,574 - INFO - 运行实验5 - 撤销机制效率分析
+2025-07-15 17:28:49,574 - INFO - 运行命令：['python', 'temp_exp5.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:30:29,972 - INFO - 命令成功完成：['python', 'temp_exp5.py']
+2025-07-15 17:30:29,974 - INFO - 实验5: 撤销机制效率分析 运行成功
+2025-07-15 17:30:30,098 - INFO - 已关闭通用Hardhat节点，准备运行实验6
+2025-07-15 17:30:35,108 - INFO - 运行 实验6: 节点故障恢复测试
+2025-07-15 17:30:35,108 - INFO - 运行实验6 - 节点故障恢复测试
+2025-07-15 17:30:35,110 - INFO - 直接运行外部脚本: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/fault_tolerance_test.py
+2025-07-15 17:30:35,110 - INFO - 运行命令：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/fault_tolerance_test.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:38:30,138 - INFO - 命令成功完成：['python', '/Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts/fault_tolerance_test.py']
+2025-07-15 17:38:30,138 - INFO - 实验6: 节点故障恢复测试 运行成功
+2025-07-15 17:38:30,138 - INFO - 分析所有实验结果
+2025-07-15 17:38:30,138 - INFO - 分析所有实验结果
+2025-07-15 17:38:30,138 - INFO - 运行命令：['python', 'analyze_results.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:38:33,232 - INFO - 命令成功完成：['python', 'analyze_results.py']
+2025-07-15 17:38:33,232 - INFO - 运行命令：['python', 'analyze_fault_tolerance.py'] (CWD: /Users/yangzongyou/Downloads/iccip 2022/code_exp/scripts)
+2025-07-15 17:38:34,317 - INFO - 命令成功完成：['python', 'analyze_fault_tolerance.py']
+2025-07-15 17:38:34,317 - INFO - 实验结果分析成功
+2025-07-15 17:38:34,317 - INFO - ====== 所有实验运行完成 ======
+2025-07-15 17:38:34,317 - INFO - 请查看 data/ 目录和 analysis/ 目录获取实验结果和分析
