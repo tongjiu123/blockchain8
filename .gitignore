@@ -1,0 +1,24 @@
+# Dependencies
+/node_modules
+
+# Build output
+/build
+/dist
+
+# macOS
+.DS_Store
+
+# Documents & Archives
+*.pdf
+*.docx
+*.pptx
+*.zip
+
+# Log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# IDEs
+.vscode/
+.idea/
