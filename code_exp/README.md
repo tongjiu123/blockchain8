@@ -1,5 +1,3 @@
-# 基于区块链的学术凭证系统 - code_exp
-
 ## Experiment Parameters
 
 The simulation is configured with the following parameters, defined in `scripts/simulation.py`:
@@ -15,6 +13,17 @@ The simulation is configured with the following parameters, defined in `scripts/
   - `REVOCATION_SCALES = [1, 10, 100, 1000, 10000, 100000]` revoked items to test revocation mechanism efficiency.
 
 All experiments are run on a local Hardhat blockchain network to ensure controlled and reproducible results.
+
+## Project Status
+
+**All experiments (1-6) are now running successfully!**
+
+All previously known bugs have been resolved, including:
+- The duplicate certificate issuance error in Experiment 3.
+- The `ImportError` in Experiment 6.
+- The `TypeError` in the analysis scripts.
+
+The full analysis report (`analysis/analysis_summary.md`) and its Chinese version (`analysis/ANALYSIS_CN.md`) are complete and up-to-date.
 
 ## 1. 概述 (Overview)
 

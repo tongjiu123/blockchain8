@@ -405,8 +405,12 @@ def main():
         # For Exp2, we use the same contract as Exp1 to measure throughput on a contract with existing state.
         asyncio.run(run_experiment_2_throughput(helper, cert_contract_exp1, dataset))
 
-        newly_issued = run_experiment_3_scalability(helper, cert_contract_exp1, dataset, initial_records=total_issued_certificates)
-        total_issued_certificates += newly_issued
+        # --- Get the accurate certificate count from the contract before running Exp3 ---
+        on_chain_certificate_count = cert_contract_exp1.functions.getCertificateCount().call()
+        logging.info(f"Accurate certificate count from contract: {on_chain_certificate_count}")
+
+        newly_issued = run_experiment_3_scalability(helper, cert_contract_exp1, dataset, initial_records=on_chain_certificate_count)
+        total_issued_certificates = on_chain_certificate_count + newly_issued
         logging.info(f"Total certificates issued after Exp 3: {total_issued_certificates}")
 
         run_experiment_4_storage(helper, cert_contract_exp1, cert_onchain_contract_exp4, dataset, deploy_gas_hybrid, deploy_gas_onchain)

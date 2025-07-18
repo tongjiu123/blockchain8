@@ -18,6 +18,7 @@ from web3.middleware import geth_poa_middleware
 from dotenv import load_dotenv
 from node_manager import NodeManager
 import json
+import sys
 
 # --- Configuration & Setup ---
 load_dotenv()
@@ -65,17 +66,31 @@ class FaultToleranceTest:
         """Set up the test environment by starting all nodes."""
         logging.info("Setting up fault tolerance test environment...")
         
-        # Start all nodes
-        active_nodes = self.node_manager.start_all_nodes()
-        if len(active_nodes) < NODE_COUNT:
-            logging.warning(f"Only {len(active_nodes)} out of {NODE_COUNT} nodes started successfully")
+        max_retries = 3
+        for attempt in range(max_retries):
+            logging.info(f"Setup attempt {attempt + 1}/{max_retries}...")
+            active_nodes = self.node_manager.start_all_nodes()
+            if len(active_nodes) == NODE_COUNT:
+                logging.info("All nodes started successfully.")
+                break
+            
+            logging.warning(
+                f"Setup attempt {attempt + 1} failed: Only {len(active_nodes)} out of {NODE_COUNT} nodes started. Retrying after cleanup..."
+            )
+            self.node_manager.stop_all_nodes()  # Clean up before retrying
+            time.sleep(5)  # Wait before next attempt
+        else:
+            logging.error(f"Setup failed after {max_retries} attempts. Could not start all nodes.")
+            return False
         
         # Connect to each node
         for node_id in active_nodes:
-            self._connect_to_node(node_id)
+            if not self._connect_to_node(node_id):
+                logging.error(f"Setup failed: Could not connect to node {node_id}.")
+                return False
             
-        logging.info(f"Connected to {len(self.web3_connections)} nodes")
-        return len(active_nodes) > 0
+        logging.info(f"Successfully connected to all {len(self.web3_connections)} nodes.")
+        return True
     
     def _connect_to_node(self, node_id):
         """
@@ -351,6 +366,7 @@ class FaultToleranceTest:
     def run_all_tests(self):
         """Run all test scenarios."""
         logging.info("Starting fault tolerance test suite...")
+        self.results = []  # Clear previous results
         
         # Define test scenarios
         scenarios = [
@@ -406,8 +422,8 @@ def main():
     try:
         # Set up the test environment
         if not test.setup():
-            logging.error("Failed to set up test environment")
-            return
+            logging.error("Failed to set up test environment. Exiting.")
+            sys.exit(1)
         
         # Run all test scenarios
         test.run_all_tests()

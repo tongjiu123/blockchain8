@@ -37,6 +37,9 @@ contract Certificate is Ownable {
     // A set of addresses for authorized educational institutions.
     EnumerableSet.AddressSet private _institutions;
 
+    // Counter for the total number of issued certificates.
+    uint256 private _certificateCount;
+
     // --- Modifiers ---
 
     /**
@@ -87,6 +90,7 @@ contract Certificate is Ownable {
             timestamp: block.timestamp
         });
 
+        _certificateCount++;
         emit CertificateIssued(certificateHash, msg.sender, block.timestamp);
     }
 
@@ -136,5 +140,13 @@ contract Certificate is Ownable {
      */
     function getInstitutionAtIndex(uint256 index) external view returns (address) {
         return _institutions.at(index);
+    }
+
+    /**
+     * @dev Returns the total number of certificates issued.
+     * @return The total count of certificates.
+     */
+    function getCertificateCount() external view returns (uint256) {
+        return _certificateCount;
     }
 }

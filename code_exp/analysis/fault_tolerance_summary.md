@@ -14,7 +14,7 @@ This experiment evaluated the system's resilience to node failures in a multi-no
 ## Availability Results
 | Scenario | Availability | Successful Txs | Failed Txs |
 |----------|-------------|---------------|------------|
-| Normal Operation | 0.86 | 43 | 7 |
+| Normal Operation | 1.00 | 50 | 0 |
 | Single Node Failure | 1.00 | 50 | 0 |
 | Double Node Failure | 1.00 | 50 | 0 |
 | Extreme Failure | 1.00 | 50 | 0 |
@@ -22,17 +22,17 @@ This experiment evaluated the system's resilience to node failures in a multi-no
 ## Recovery Results
 | Scenario | Recovery Time (s) | Sync Complete | Data Consistent |
 |----------|------------------|---------------|----------------|
-| Normal Operation | 70.38 | False | True |
-| Single Node Failure | 73.59 | False | True |
-| Double Node Failure | 76.79 | False | False |
-| Extreme Failure | 79.86 | False | False |
+| Normal Operation | 70.36 | False | True |
+| Single Node Failure | 73.54 | False | False |
+| Double Node Failure | 75.91 | False | False |
+| Extreme Failure | 79.12 | False | True |
 
 ## Key Findings
-- **Average System Availability**: 0.96 (or 96.5%)
-- **Average Recovery Time**: 75.16 seconds
-- **Best Availability Scenario**: Single Node Failure
+- **Average System Availability**: 1.00 (or 100.0%)
+- **Average Recovery Time**: 74.73 seconds
+- **Best Availability Scenario**: Normal Operation
 - **Fastest Recovery Scenario**: Normal Operation
-- **Data Consistency**: Maintained in Normal Operation, Single Node Failure
+- **Data Consistency**: Maintained in Normal Operation, Extreme Failure
 
 ## Visualization
 ![Fault Tolerance Test Results](./fig6_fault_tolerance.png)
