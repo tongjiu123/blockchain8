@@ -33,6 +33,7 @@ yarn-error.log
 *.synctex.gz
 
 # Document formats
-*.pdf
+
 *.pptx
 *.docx
+readme.md
